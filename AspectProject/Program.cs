@@ -20,15 +20,11 @@ namespace ConsoleApp3
             int count = 0;
             foreach (int element in customer.Name)
             {
-
                 count++;
                 Console.WriteLine($"Element #{count}: {element}");
             }
-
             //Console.WriteLine("Name: {0}", customer.Name);
-
             Console.ReadLine();
-
         }
     }
 
@@ -41,11 +37,9 @@ namespace ConsoleApp3
             {
                 sirala mysirala = new sirala();
                 mysirala.Siralaturegore(args);
-
             }
             else Console.WriteLine("Collection degil");
         }
-
     }
 
     [PSerializable]
@@ -54,7 +48,6 @@ namespace ConsoleApp3
         public override void OnGetValue(LocationInterceptionArgs args)
         {
             base.OnGetValue(args);
-
             if (args.Value is ICollection)
             {
                 siralaPropetry mysirala = new siralaPropetry();
@@ -63,7 +56,14 @@ namespace ConsoleApp3
             }
             else Console.WriteLine("Collection degil");
         }
-
+    }
+    public class MyClass
+    {
+        [MyAsepctClass]
+        public ICollection MyMethod(ICollection array, string ascordesc)
+        {
+            return array;
+        }
     }
     public class Customer
     {
@@ -73,7 +73,6 @@ namespace ConsoleApp3
         public Customer(ICollection address)
         {
             Name = address;
-
         }
     }
 }
