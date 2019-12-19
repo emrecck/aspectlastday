@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols LinesOfCode="599" PostSharpLinesOfCode="0" EnhancedTypesCount="3" SchemaVersion="1" PostSharpVersion="6.4.3.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Evolution Source="#1=F:[AspectProject]ConsoleApp3.Customer::_address" Target="#2=F:[AspectProject]ConsoleApp3.Customer::&lt;_address&gt;k__OriginalField" />
+  <Evolution Source="#2" Target="#3=P:[AspectProject]ConsoleApp3.Customer::_address()" />
+  <Class Class="#4=T:[PostSharp]PostSharp.Serialization.PSerializableAttribute">
+    <Instance Declaration="#5=T:[AspectProject]ConsoleApp3.PropetryBakıcı" Id="7fc3a489caaf1436">
+      <Target />
+    </Instance>
+  </Class>
+  <Class Class="#6=T:[AspectProject]ConsoleApp3.MyAsepctClass">
+    <Instance Declaration="#7=M:[AspectProject]ConsoleApp3.MyClass::MyMethodI(System.Collections.Generic.List{System.Int32})" Id="7fc3a4891a422715">
+      <Target LinesAvoided="4">
+        <JoinPoint Description="#8=Wrapped by advice(s) OnEntry, OnSuccess" Ordinal="0" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#9=M:[AspectProject]ConsoleApp3.MyClass::MyMethodS(System.Collections.Generic.List{System.String})" Id="7fc3a48975dd9ef0">
+      <Target LinesAvoided="4">
+        <JoinPoint Description="#8" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#10=M:[AspectProject]ConsoleApp3.MyClass::MyMethodD(System.Collections.Generic.List{System.Double})" Id="7fc3a4893940b219">
+      <Target LinesAvoided="4">
+        <JoinPoint Description="#8" Ordinal="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#11=M:[AspectProject]ConsoleApp3.MyClass::MyMethodF(System.Collections.Generic.List{System.Single})" Id="7fc3a48972f6ddca">
+      <Target LinesAvoided="4">
+        <JoinPoint Description="#8" Ordinal="3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#12=M:[AspectProject]ConsoleApp3.MyClass::MyMethodDE(System.Collections.Generic.List{[mscorlib]System.Decimal})" Id="7fc3a489e54cc8ef">
+      <Target LinesAvoided="4">
+        <JoinPoint Description="#8" Ordinal="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#13=M:[AspectProject]ConsoleApp3.MyClass::MyMethodL(System.Collections.Generic.List{System.Int64})" Id="7fc3a489c71b2881">
+      <Target LinesAvoided="4">
+        <JoinPoint Description="#8" Ordinal="5" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#14=M:[AspectProject]ConsoleApp3.MyClass::ArrayInt(System.Int32[])" Id="7fc3a4891f58af53">
+      <Target LinesAvoided="4">
+        <JoinPoint Description="#8" Ordinal="6" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#15=M:[AspectProject]ConsoleApp3.MyClass::ArrayString(System.String[])" Id="7fc3a48914e2ef55">
+      <Target LinesAvoided="4">
+        <JoinPoint Description="#8" Ordinal="7" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#16=M:[AspectProject]ConsoleApp3.MyClass::ArrayDouble(System.Double[])" Id="7fc3a489e89be7bc">
+      <Target LinesAvoided="4">
+        <JoinPoint Description="#8" Ordinal="8" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#17=M:[AspectProject]ConsoleApp3.MyClass::ArrayFloat(System.Single[])" Id="7fc3a489d4ce3cfa">
+      <Target LinesAvoided="4">
+        <JoinPoint Description="#8" Ordinal="9" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#18=M:[AspectProject]ConsoleApp3.MyClass::Arraydecimal(System.Decimal[])" Id="7fc3a489cd269c7e">
+      <Target LinesAvoided="4">
+        <JoinPoint Description="#8" Ordinal="10" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#19=M:[AspectProject]ConsoleApp3.MyClass::ArrayLong(System.Int64[])" Id="7fc3a48910f63db0">
+      <Target LinesAvoided="4">
+        <JoinPoint Description="#8" Ordinal="11" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#20=M:[AspectProject]ConsoleApp3.MyClass::GetArrayList(System.Collections.ArrayList)" Id="7fc3a489124d70bf">
+      <Target LinesAvoided="4">
+        <JoinPoint Description="#8" Ordinal="12" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#5">
+    <Instance Declaration="#2" Id="7fc3a4899befe6f8">
+      <Target LinesAvoided="2">
+        <JoinPoint Description="#21=Intercepted by advice OnGetValue" Semantic="Getter" Ordinal="15" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#22=P:[AspectProject]ConsoleApp3.Customer::Name()" Id="7fc3a489a6f6d1d0">
+      <Target LinesAvoided="2">
+        <JoinPoint Advised="#23=M:[AspectProject]ConsoleApp3.Customer::get_Name()" Description="#21" Semantic="Getter" Ordinal="13" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#24=P:[AspectProject]ConsoleApp3.Customer::Address()" Id="7fc3a4894c752723">
+      <Target LinesAvoided="2">
+        <JoinPoint Advised="#25=M:[AspectProject]ConsoleApp3.Customer::get_Address()" Description="#21" Semantic="Getter" Ordinal="14" />
+      </Target>
+    </Instance>
+  </Class>
+  <Annotation Target="#26=M:[AspectProject]ConsoleApp3.MyAsepctClass::OnEntry(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#27=2" Description="#28=PostSharp estimates that 2 lines of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
+  <Annotation Target="#29=M:[AspectProject]ConsoleApp3.MyAsepctClass::OnSuccess(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#27" Description="#28" />
+  <Annotation Target="#30=M:[AspectProject]ConsoleApp3.PropetryBakıcı::OnGetValue(PostSharp.Aspects.LocationInterceptionArgs)" Arguments="#27" Description="#28" />
+</Symbols>
