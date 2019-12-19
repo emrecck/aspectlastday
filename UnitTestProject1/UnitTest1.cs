@@ -36,7 +36,7 @@ namespace UnitTestProject1
             List<double> array = new List<double>() { 15.2, 1.3, 5.9, 2.5, 8.3 };
             MyClass MyObject = new MyClass();
             MyObject.MyMethodD(array);
-            array.Sort();
+             
             CollectionAssert.AreEqual(deneme, array);
         }
         [TestMethod]
@@ -47,7 +47,7 @@ namespace UnitTestProject1
             List<float> array = new List<float>() { 3.5f, 2.2f, 1.4f, 8.1f, 5.3f };
             MyClass MyObject = new MyClass();
             MyObject.MyMethodF(array);
-            array.Sort();
+             
             CollectionAssert.AreEqual(deneme, array);
         }
         [TestMethod]
@@ -58,7 +58,7 @@ namespace UnitTestProject1
             List<decimal> array = new List<decimal>() { 35, 25, 15, 10, 2, 5, 4 };
             MyClass MyObject = new MyClass();
             MyObject.MyMethodDE(array);
-            array.Sort();
+             
             CollectionAssert.AreEqual(deneme, array);
         }
         [TestMethod]
@@ -69,7 +69,7 @@ namespace UnitTestProject1
             List<long> array = new List<long>() { 10, 5, 2, 4, 9, 11, 45 };
             MyClass MyObject = new MyClass();
             MyObject.MyMethodL(array);
-            array.Sort();
+             
             CollectionAssert.AreEqual(deneme, array);
         }
         [TestMethod]
