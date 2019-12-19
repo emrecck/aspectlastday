@@ -38,3 +38,17 @@ C:\Users\Canavar\Desktop\aspect2\aspect2\AspectProject\obj\Debug\AspectProject.c
 C:\Users\Canavar\Desktop\aspect2\aspect2\AspectProject\obj\Debug\AspectProject.exe
 C:\Users\Canavar\Desktop\aspect2\aspect2\AspectProject\obj\Debug\AspectProject.pdb
 C:\Users\Canavar\Desktop\aspect2\aspect2\AspectProject\obj\Debug\PostSharp\postsharp.app.config
+C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\bin\Debug\AspectProject.pssym
+C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\bin\Debug\AspectProject.exe.config
+C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\bin\Debug\AspectProject.exe
+C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\bin\Debug\AspectProject.pdb
+C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\bin\Debug\PostSharp.dll
+C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\bin\Debug\PostSharp.xml
+C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\obj\Debug\AspectProject.csprojAssemblyReference.cache
+C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\obj\Debug\AspectProject.csproj.CoreCompileInputs.cache
+C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\obj\Debug\PostSharp\touch
+C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\obj\Debug\PostSharp\dependencies.txt
+C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\obj\Debug\AspectProject.csproj.CopyComplete
+C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\obj\Debug\AspectProject.exe
+C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\obj\Debug\AspectProject.pdb
+C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\obj\Debug\PostSharp\postsharp.app.config

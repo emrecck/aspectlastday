@@ -11,10 +11,10 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            List<int> array = new List<int>() { 15, 9, 8, 54, 45, 2, 67, 15, 68 };
-            MyClass MyObject = new MyClass();
-            MyObject.MyMethodI(array);
-            
+            //List<int> array = new List<int>() { 15, 9, 8, 54, 45, 2, 67, 15, 68 };
+            //MyClass MyObject = new MyClass();
+            //MyObject.MyMethodI(array);
+
 
             int[] dizim = new int[] { 3, 2, 5, 8 };
             var customer = new Customer(dizim);
@@ -25,32 +25,32 @@ namespace ConsoleApp3
                 count++;
                 Console.WriteLine($"Element #{count}: {element}");
             }
-            //Console.WriteLine("Address: {0}", customer.Address);
+
             //Console.WriteLine("Name: {0}", customer.Name);
-            
+
             Console.ReadLine();
 
         }
-    } 
+    }
 
     [Serializable]
     public class MyAsepctClass : OnMethodBoundaryAspect
     {
-        public override void OnEntry(MethodExecutionArgs args)
-        {
-            Console.WriteLine("before the method");
-        }
+        //public override void OnEntry(MethodExecutionArgs args)
+        //{
+        //    Console.WriteLine("before the method");
+        //}
         public override void OnSuccess(MethodExecutionArgs args)
         {
             if (args.ReturnValue is ICollection)
             {
                 sirala mysirala = new sirala();
                 mysirala.Siralaturegore(args);
-                
+
             }
             else Console.WriteLine("Collection degil");
         }
-       
+
     }
 
     public class sirala
@@ -59,7 +59,7 @@ namespace ConsoleApp3
         {
             if (args.ReturnValue.GetType() == typeof(List<int>))
             {
-                
+
                 List<int> list_ = (List<int>)args.ReturnValue;
                 list_.Sort();
                 string[] array = new string[list_.Count];
@@ -292,7 +292,7 @@ namespace ConsoleApp3
                 {
                     Console.Write(item + " , ");
                 }
-                Console.WriteLine("\n Sorted");
+                //Console.WriteLine("\n" + "Sorted");
                 return array;
             }
             else if (args.Value.GetType() == typeof(List<string>))
@@ -306,9 +306,9 @@ namespace ConsoleApp3
                 }
                 foreach (var item in list_)
                 {
-                    Console.Write(item + " ");
+                    // Console.Write(item + " ");
                 }
-                Console.WriteLine("\n" + "Sorted");
+                // Console.WriteLine("\n" + "Sorted");
                 return array;
             }
             else if (args.Value.GetType() == typeof(List<double>))
@@ -322,9 +322,9 @@ namespace ConsoleApp3
                 }
                 foreach (var item in list_)
                 {
-                    Console.Write(item + " ");
+                    // Console.Write(item + " ");
                 }
-                Console.WriteLine("\n" + "Sorted");
+                // Console.WriteLine("\n" + "Sorted");
                 return array;
             }
             else if (args.Value.GetType() == typeof(List<float>))
@@ -338,9 +338,9 @@ namespace ConsoleApp3
                 }
                 foreach (var item in list_)
                 {
-                    Console.Write(item + " ");
+                    // Console.Write(item + " ");
                 }
-                Console.WriteLine("\n" + "Sorted");
+                // Console.WriteLine("\n" + "Sorted");
                 return array;
             }
             else if (args.Value.GetType() == typeof(List<decimal>))
@@ -354,9 +354,9 @@ namespace ConsoleApp3
                 }
                 foreach (var item in list_)
                 {
-                    Console.Write(item + " ");
+                    // Console.Write(item + " ");
                 }
-                Console.WriteLine("\n" + "Sorted");
+                // Console.WriteLine("\n" + "Sorted");
                 return array;
             }
             else if (args.Value.GetType() == typeof(List<long>))
@@ -370,9 +370,9 @@ namespace ConsoleApp3
                 }
                 foreach (var item in list_)
                 {
-                    Console.Write(item + " ");
+                    // Console.Write(item + " ");
                 }
-                Console.WriteLine("\n" + "Sorted");
+                // Console.WriteLine("\n" + "Sorted");
                 return array;
             }
             else if (args.Value.GetType() == typeof(ArrayList))
@@ -386,9 +386,9 @@ namespace ConsoleApp3
                 }
                 foreach (var item in list_)
                 {
-                    Console.Write(item + " ");
+                    // Console.Write(item + " ");
                 }
-                Console.WriteLine("\n" + "Sorted");
+                // Console.WriteLine("\n" + "Sorted");
                 return array;
             }
             else if (args.Value.GetType() == typeof(int[]))
@@ -402,9 +402,9 @@ namespace ConsoleApp3
                 }
                 foreach (var item in list_)
                 {
-                    Console.Write(item + " ");
+                    // Console.Write(item + " ");
                 }
-                Console.WriteLine("\n" + "Sorted");
+                // Console.WriteLine("\n" + "Sorted");
                 return array;
             }
             else if (args.Value.GetType() == typeof(string[]))
@@ -418,9 +418,9 @@ namespace ConsoleApp3
                 }
                 foreach (var item in list_)
                 {
-                    Console.Write(item + " ");
+                    // Console.Write(item + " ");
                 }
-                Console.WriteLine("\n" + "Sorted");
+                // Console.WriteLine("\n" + "Sorted");
                 return array;
             }
             else if (args.Value.GetType() == typeof(double[]))
@@ -434,9 +434,9 @@ namespace ConsoleApp3
                 }
                 foreach (var item in list_)
                 {
-                    Console.Write(item + " ");
+                    // Console.Write(item + " ");
                 }
-                Console.WriteLine("\n" + "Sorted");
+                // Console.WriteLine("\n" + "Sorted");
                 return array;
             }
             else if (args.Value.GetType() == typeof(float[]))
@@ -450,9 +450,9 @@ namespace ConsoleApp3
                 }
                 foreach (var item in list_)
                 {
-                    Console.Write(item + " ");
+                    // Console.Write(item + " ");
                 }
-                Console.WriteLine("\n" + "Sorted");
+                // Console.WriteLine("\n" + "Sorted");
                 return array;
             }
             else if (args.Value.GetType() == typeof(decimal[]))
@@ -466,9 +466,9 @@ namespace ConsoleApp3
                 }
                 foreach (var item in list_)
                 {
-                    Console.Write(item + " ");
+                    // Console.Write(item + " ");
                 }
-                Console.WriteLine("\n" + "Sorted");
+                // Console.WriteLine("\n" + "Sorted");
                 return array;
             }
             else if (args.Value.GetType() == typeof(long[]))
@@ -482,9 +482,9 @@ namespace ConsoleApp3
                 }
                 foreach (var item in list_)
                 {
-                    Console.Write(item + " ");
+                    // Console.Write(item + " ");
                 }
-                Console.WriteLine("\n" + "Sorted");
+                // Console.WriteLine("\n" + "Sorted");
                 return array;
             }
             else
@@ -494,7 +494,7 @@ namespace ConsoleApp3
         }
 
     }
-    
+
     public class MyClass
     {
         [MyAsepctClass]
@@ -528,7 +528,8 @@ namespace ConsoleApp3
             return array;
         }
         [MyAsepctClass]
-        public int[] ArrayInt(int[] array) {
+        public int[] ArrayInt(int[] array)
+        {
             return array;
         }
         [MyAsepctClass]
@@ -557,7 +558,7 @@ namespace ConsoleApp3
             return array;
         }
         [MyAsepctClass]
-        public ArrayList GetArrayList(ArrayList array) 
+        public ArrayList GetArrayList(ArrayList array)
         {
             return array;
         }
@@ -572,25 +573,9 @@ namespace ConsoleApp3
 
             if (args.Value is ICollection)
             {
-                //GetType(args.Value);
                 siralaPropetry mysirala = new siralaPropetry();
 
                 mysirala.Siralaturegore(args);
-
-                //List<int> lst = new List<int>();
-                //int count = 0;
-                Console.WriteLine("postsharp",args.Value);
-                //int count = 0;
-                //foreach (int element in (List<int>)args.Value)
-                //{
-                //    count++;
-                //    Console.WriteLine($"Element #{count}: {element}");
-                //}
-                //Console.WriteLine($"Number of elements in postsharp: {count}");
-
-                //List<int> benimlist = new List<int>();
-                
-
             }
             else Console.WriteLine("Collection degil");
         }
@@ -604,10 +589,10 @@ namespace ConsoleApp3
         public Customer(int[] address)
         {
             _address = address;
+            
         }
         [PropetryBakıcı]
         public int[] Name { get; set; }
-        [PropetryBakıcı]
         public int[] Address { get { return _address; } }
     }
 }
