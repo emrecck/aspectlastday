@@ -52,3 +52,16 @@ C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\obj\Debug\AspectPro
 C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\obj\Debug\AspectProject.exe
 C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\obj\Debug\AspectProject.pdb
 C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\obj\Debug\PostSharp\postsharp.app.config
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\AspectProject\bin\Debug\AspectProject.pssym
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\AspectProject\bin\Debug\AspectProject.exe.config
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\AspectProject\bin\Debug\AspectProject.exe
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\AspectProject\bin\Debug\AspectProject.pdb
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\AspectProject\bin\Debug\PostSharp.dll
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\AspectProject\bin\Debug\PostSharp.xml
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\AspectProject\obj\Debug\AspectProject.csprojAssemblyReference.cache
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\AspectProject\obj\Debug\PostSharp\touch
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\AspectProject\obj\Debug\PostSharp\dependencies.txt
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\AspectProject\obj\Debug\AspectProject.csproj.CopyComplete
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\AspectProject\obj\Debug\AspectProject.exe
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\AspectProject\obj\Debug\AspectProject.pdb
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\AspectProject\obj\Debug\PostSharp\postsharp.app.config

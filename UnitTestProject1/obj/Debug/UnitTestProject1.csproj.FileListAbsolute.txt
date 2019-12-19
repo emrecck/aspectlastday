@@ -59,3 +59,24 @@ C:\Users\Canavar\Desktop\aspect2\aspectlastday\UnitTestProject1\obj\Debug\UnitTe
 C:\Users\Canavar\Desktop\aspect2\aspectlastday\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.CopyComplete
 C:\Users\Canavar\Desktop\aspect2\aspectlastday\UnitTestProject1\obj\Debug\UnitTestProject1.dll
 C:\Users\Canavar\Desktop\aspect2\aspectlastday\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\tr\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\tr\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\AspectProject.exe
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\PostSharp.dll
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\AspectProject.pdb
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\AspectProject.exe.config
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\bin\Debug\PostSharp.xml
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\obj\Debug\UnitTestProject1.csprojAssemblyReference.cache
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.CopyComplete
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

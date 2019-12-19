@@ -21,7 +21,7 @@ namespace ConsoleApp3
                 }
                 foreach (var item in array)
                 {
-                    Console.Write(item + " , ");
+                    //Console.Write(item + " , ");
                 }
                 //Console.WriteLine("\n" + "Sorted");
                 return array;

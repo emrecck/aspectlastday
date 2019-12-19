@@ -15,7 +15,7 @@ namespace UnitTestProject1
             deneme.Sort();
             List<int> array = new List<int>() { 15, 9, 8, 54, 45, 2, 67, 15, 68 };
             MyClass MyObject = new MyClass();
-            MyObject.MyMethodI(array);
+            MyObject.MyMethod(array, "asc");
             CollectionAssert.AreEqual(deneme, array);
         }
         [TestMethod]
@@ -25,7 +25,7 @@ namespace UnitTestProject1
             deneme.Sort();
             List<string> array = new List<string>() { "antep", "adana", "yozgat", "ankara", "istanbul", "malatya", "edirne" };
             MyClass MyObject = new MyClass();
-            MyObject.MyMethodS(array);
+            MyObject.MyMethod(array, "asc");
             CollectionAssert.AreEqual(deneme, array);
         }
         [TestMethod]
@@ -35,8 +35,8 @@ namespace UnitTestProject1
             deneme.Sort();
             List<double> array = new List<double>() { 15.2, 1.3, 5.9, 2.5, 8.3 };
             MyClass MyObject = new MyClass();
-            MyObject.MyMethodD(array);
-             
+            MyObject.MyMethod(array, "asc");
+            array.Sort();
             CollectionAssert.AreEqual(deneme, array);
         }
         [TestMethod]
@@ -46,8 +46,8 @@ namespace UnitTestProject1
             deneme.Sort();
             List<float> array = new List<float>() { 3.5f, 2.2f, 1.4f, 8.1f, 5.3f };
             MyClass MyObject = new MyClass();
-            MyObject.MyMethodF(array);
-             
+            MyObject.MyMethod(array, "asc");
+            array.Sort();
             CollectionAssert.AreEqual(deneme, array);
         }
         [TestMethod]
@@ -57,8 +57,8 @@ namespace UnitTestProject1
             deneme.Sort();
             List<decimal> array = new List<decimal>() { 35, 25, 15, 10, 2, 5, 4 };
             MyClass MyObject = new MyClass();
-            MyObject.MyMethodDE(array);
-             
+            MyObject.MyMethod(array, "asc");
+            array.Sort();
             CollectionAssert.AreEqual(deneme, array);
         }
         [TestMethod]
@@ -68,8 +68,8 @@ namespace UnitTestProject1
             deneme.Sort();
             List<long> array = new List<long>() { 10, 5, 2, 4, 9, 11, 45 };
             MyClass MyObject = new MyClass();
-            MyObject.MyMethodL(array);
-             
+            MyObject.MyMethod(array, "asc");
+            array.Sort();
             CollectionAssert.AreEqual(deneme, array);
         }
         [TestMethod]
@@ -79,7 +79,7 @@ namespace UnitTestProject1
             Array.Sort(deneme);
             int[] array = new int[] { 15, 9, 8, 54, 45, 2, 67, 15, 68 };
             MyClass MyObject = new MyClass();
-            MyObject.ArrayInt(array);
+            MyObject.MyMethod(array, "asc");
             CollectionAssert.AreEqual(deneme, array);
         }
         [TestMethod]
@@ -89,7 +89,7 @@ namespace UnitTestProject1
             Array.Sort(deneme);
             string[] array = new string[] { "antep", "adana", "yozgat", "ankara", "istanbul", "malatya", "edirne" };
             MyClass MyObject = new MyClass();
-            MyObject.ArrayString(array);
+            MyObject.MyMethod(array, "asc");
             CollectionAssert.AreEqual(deneme, array);
         }
         [TestMethod]
@@ -99,7 +99,7 @@ namespace UnitTestProject1
             Array.Sort(deneme);
             double[] array = new double[] { 15.2, 1.3, 5.9, 2.5, 8.3 };
             MyClass MyObject = new MyClass();
-            MyObject.ArrayDouble(array);
+            MyObject.MyMethod(array, "asc");
             CollectionAssert.AreEqual(deneme, array);
         }
         [TestMethod]
@@ -109,26 +109,29 @@ namespace UnitTestProject1
             Array.Sort(deneme);
             float[] array = new float[] { 3.5f, 2.2f, 1.4f, 8.1f, 5.3f };
             MyClass MyObject = new MyClass();
-            MyObject.ArrayFloat(array);
+            MyObject.MyMethod(array, "asc");
             CollectionAssert.AreEqual(deneme, array);
         }
+        [TestMethod]
         public void TestMethodDecimal()
         {
             decimal[] deneme = new decimal[] { 35, 25, 15, 10, 2, 5, 4 };
             Array.Sort(deneme);
             decimal[] array = new decimal[] { 35, 25, 15, 10, 2, 5, 4 };
             MyClass MyObject = new MyClass();
-            MyObject.Arraydecimal(array);
+            MyObject.MyMethod(array, "asc");
             CollectionAssert.AreEqual(deneme, array);
         }
+        [TestMethod]
         public void TestMethodLong()
         {
             long[] deneme = new long[] { 10, 5, 2, 4, 9, 11, 45 };
             Array.Sort(deneme);
             long[] array = new long[] { 10, 5, 2, 4, 9, 11, 45 };
             MyClass MyObject = new MyClass();
-            MyObject.ArrayLong(array);
+            MyObject.MyMethod(array, "asc");
             CollectionAssert.AreEqual(deneme, array);
         }
+
     }
 }

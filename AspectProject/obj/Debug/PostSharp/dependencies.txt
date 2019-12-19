@@ -1,2 +1,2 @@
 C:\ProgramData\PostSharp\6.4.3\bin.Release\net472\PostSharp.Compiler.Engine.dll
-C:\Users\Canavar\Desktop\aspect2\aspectlastday\AspectProject\obj\Debug\PostSharp\postsharp.config
+C:\Users\Emre ÇİÇEK\Downloads\Telegram Desktop\aspectlastday\aspectlastday\AspectProject\obj\Debug\PostSharp\postsharp.config

@@ -7,222 +7,283 @@ namespace ConsoleApp3
 {
     public class sirala
     {
-        public string[] Siralaturegore(MethodExecutionArgs args)
+        public ICollection Siralaturegore(MethodExecutionArgs args)
         {
             if (args.ReturnValue.GetType() == typeof(List<int>))
             {
-
+                var parameters = args.Arguments[1];
                 List<int> list_ = (List<int>)args.ReturnValue;
-                list_.Sort();
-                string[] array = new string[list_.Count];
-                for (int i = 0; i < list_.Count; i++)
+                if (parameters == "asc")
                 {
-                    array[i] = list_[i].ToString();
+                    list_.Sort();
                 }
-                foreach (var item in array)
+                else if (parameters == "desc")
                 {
-                    Console.Write(item + " , ");
+                    list_.Sort();
+                    list_.Reverse();
                 }
-                Console.WriteLine("\n Sorted");
-                return array;
+                else
+                {
+                    Console.WriteLine("buyukten kucuge sıralamak istiyorsanız ; desc kucukten buyuge siralamak istiyorsaniz asc degeri giriniz");
+                    list_.Sort();
+                }
+
+                return list_;
             }
             else if (args.ReturnValue.GetType() == typeof(List<string>))
             {
+                var parameters = args.Arguments[1];
                 List<string> list_ = (List<string>)args.ReturnValue;
-                list_.Sort();
-                string[] array = new string[list_.Count];
-                for (int i = 0; i < list_.Count; i++)
+                if (parameters == "asc")
                 {
-                    array[i] = list_[i];
+                    list_.Sort();
                 }
-                foreach (var item in list_)
+                else if (parameters == "desc")
                 {
-                    Console.Write(item + " ");
+                    list_.Sort();
+                    list_.Reverse();
                 }
-                Console.WriteLine("\n" + "Sorted");
-                return array;
+                else
+                {
+                    Console.WriteLine("buyukten kucuge sıralamak istiyorsanız ; desc kucukten buyuge siralamak istiyorsaniz asc degeri giriniz");
+                    list_.Sort();
+                }
+
+                return list_;
             }
             else if (args.ReturnValue.GetType() == typeof(List<double>))
             {
+                var parameters = args.Arguments[1];
                 List<double> list_ = (List<double>)args.ReturnValue;
-                list_.Sort();
-                string[] array = new string[list_.Count];
-                for (int i = 0; i < list_.Count; i++)
+                if (parameters == "asc")
                 {
-                    array[i] = list_[i].ToString();
+                    list_.Sort();
                 }
-                foreach (var item in list_)
+                else if (parameters == "desc")
                 {
-                    Console.Write(item + " ");
+                    list_.Sort();
+                    list_.Reverse();
                 }
-                Console.WriteLine("\n" + "Sorted");
-                return array;
+                else
+                {
+                    Console.WriteLine("buyukten kucuge sıralamak istiyorsanız ; desc kucukten buyuge siralamak istiyorsaniz asc degeri giriniz");
+                    list_.Sort();
+                }
+
+                return list_;
             }
             else if (args.ReturnValue.GetType() == typeof(List<float>))
             {
+                var parameters = args.Arguments[1];
                 List<float> list_ = (List<float>)args.ReturnValue;
-                list_.Sort();
-                string[] array = new string[list_.Count];
-                for (int i = 0; i < list_.Count; i++)
+                if (parameters == "asc")
                 {
-                    array[i] = list_[i].ToString();
+                    list_.Sort();
                 }
-                foreach (var item in list_)
+                else if (parameters == "desc")
                 {
-                    Console.Write(item + " ");
+                    list_.Sort();
+                    list_.Reverse();
                 }
-                Console.WriteLine("\n" + "Sorted");
-                return array;
+                else
+                {
+                    Console.WriteLine("buyukten kucuge sıralamak istiyorsanız ; desc kucukten buyuge siralamak istiyorsaniz asc degeri giriniz");
+                    list_.Sort();
+                }
+                return list_;
             }
             else if (args.ReturnValue.GetType() == typeof(List<decimal>))
             {
+                var parameters = args.Arguments[1];
                 List<decimal> list_ = (List<decimal>)args.ReturnValue;
-                list_.Sort();
-                string[] array = new string[list_.Count];
-                for (int i = 0; i < list_.Count; i++)
+                if (parameters == "asc")
                 {
-                    array[i] = list_[i].ToString();
+                    list_.Sort();
                 }
-                foreach (var item in list_)
+                else if (parameters == "desc")
                 {
-                    Console.Write(item + " ");
+                    list_.Sort();
+                    list_.Reverse();
                 }
-                Console.WriteLine("\n" + "Sorted");
-                return array;
+                else
+                {
+                    Console.WriteLine("buyukten kucuge sıralamak istiyorsanız ; desc kucukten buyuge siralamak istiyorsaniz asc degeri giriniz");
+                    list_.Sort();
+                }
+
+                return list_;
             }
             else if (args.ReturnValue.GetType() == typeof(List<long>))
             {
+                var parameters = args.Arguments[1];
                 List<long> list_ = (List<long>)args.ReturnValue;
-                list_.Sort();
-                string[] array = new string[list_.Count];
-                for (int i = 0; i < list_.Count; i++)
+                if (parameters == "asc")
                 {
-                    array[i] = list_[i].ToString();
+                    list_.Sort();
                 }
-                foreach (var item in list_)
+                else if (parameters == "desc")
                 {
-                    Console.Write(item + " ");
+                    list_.Sort();
+                    list_.Reverse();
                 }
-                Console.WriteLine("\n" + "Sorted");
-                return array;
+                else
+                {
+                    Console.WriteLine("buyukten kucuge sıralamak istiyorsanız ; desc kucukten buyuge siralamak istiyorsaniz asc degeri giriniz");
+                    list_.Sort();
+                }
+
+                return list_;
             }
             else if (args.ReturnValue.GetType() == typeof(ArrayList))
             {
+                var parameters = args.Arguments[1];
                 ArrayList list_ = (ArrayList)args.ReturnValue;
-                list_.Sort();
-                string[] array = new string[list_.Count];
-                for (int i = 0; i < list_.Count; i++)
+                if (parameters == "asc")
                 {
-                    array[i] = list_[i].ToString();
+                    list_.Sort();
                 }
-                foreach (var item in list_)
+                else if (parameters == "desc")
                 {
-                    Console.Write(item + " ");
+                    list_.Sort();
+                    list_.Reverse();
                 }
-                Console.WriteLine("\n" + "Sorted");
-                return array;
+                else
+                {
+                    Console.WriteLine("buyukten kucuge sıralamak istiyorsanız ; desc kucukten buyuge siralamak istiyorsaniz asc degeri giriniz");
+                    list_.Sort();
+                }
+
+                return list_;
             }
             else if (args.ReturnValue.GetType() == typeof(int[]))
             {
+                var parameters = args.Arguments[1];
                 int[] list_ = (int[])args.ReturnValue;
+                if (parameters == "asc")
+                {
+                    Array.Sort(list_);
+                }
+                else if (parameters == "desc")
+                {
+                    Array.Sort(list_);
+                    Array.Reverse(list_);
+                }
+                else
+                {
+                    Console.WriteLine("buyukten kucuge sıralamak istiyorsanız ; desc kucukten buyuge siralamak istiyorsaniz asc degeri giriniz");
+                    Array.Sort(list_);
+                }
                 Array.Sort(list_);
-                string[] array = new string[list_.Length];
-                for (int i = 0; i < list_.Length; i++)
-                {
-                    array[i] = list_[i].ToString();
-                }
-                foreach (var item in list_)
-                {
-                    Console.Write(item + " ");
-                }
-                Console.WriteLine("\n" + "Sorted");
-                return array;
+
+                return list_;
             }
             else if (args.ReturnValue.GetType() == typeof(string[]))
             {
+                var parameters = args.Arguments[1];
                 string[] list_ = (string[])args.ReturnValue;
-                Array.Sort(list_);
-                string[] array = new string[list_.Length];
-                for (int i = 0; i < list_.Length; i++)
+                if (parameters == "asc")
                 {
-                    array[i] = list_[i];
+                    Array.Sort(list_);
                 }
-                foreach (var item in list_)
+                else if (parameters == "desc")
                 {
-                    Console.Write(item + " ");
+                    Array.Sort(list_);
+                    Array.Reverse(list_);
                 }
-                Console.WriteLine("\n" + "Sorted");
-                return array;
+                else
+                {
+                    Console.WriteLine("buyukten kucuge sıralamak istiyorsanız ; desc kucukten buyuge siralamak istiyorsaniz asc degeri giriniz");
+                    Array.Sort(list_);
+                }
+
+                return list_;
             }
             else if (args.ReturnValue.GetType() == typeof(double[]))
             {
+                var parameters = args.Arguments[1];
                 double[] list_ = (double[])args.ReturnValue;
-                Array.Sort(list_);
-                string[] array = new string[list_.Length];
-                for (int i = 0; i < list_.Length; i++)
+                if (parameters == "asc")
                 {
-                    array[i] = list_[i].ToString();
+                    Array.Sort(list_);
                 }
-                foreach (var item in list_)
+                else if (parameters == "desc")
                 {
-                    Console.Write(item + " ");
+                    Array.Sort(list_);
+                    Array.Reverse(list_);
                 }
-                Console.WriteLine("\n" + "Sorted");
-                return array;
+                else
+                {
+                    Console.WriteLine("buyukten kucuge sıralamak istiyorsanız ; desc kucukten buyuge siralamak istiyorsaniz asc degeri giriniz");
+                    Array.Sort(list_);
+                }
+
+                return list_;
             }
             else if (args.ReturnValue.GetType() == typeof(float[]))
             {
+                var parameters = args.Arguments[1];
                 float[] list_ = (float[])args.ReturnValue;
-                Array.Sort(list_);
-                string[] array = new string[list_.Length];
-                for (int i = 0; i < list_.Length; i++)
+                if (parameters == "asc")
                 {
-                    array[i] = list_[i].ToString();
+                    Array.Sort(list_);
                 }
-                foreach (var item in list_)
+                else if (parameters == "desc")
                 {
-                    Console.Write(item + " ");
+                    Array.Sort(list_);
+                    Array.Reverse(list_);
                 }
-                Console.WriteLine("\n" + "Sorted");
-                return array;
+                else
+                {
+                    Console.WriteLine("buyukten kucuge sıralamak istiyorsanız ; desc kucukten buyuge siralamak istiyorsaniz asc degeri giriniz");
+                    Array.Sort(list_);
+                }
+
+                return list_;
             }
             else if (args.ReturnValue.GetType() == typeof(decimal[]))
             {
+                var parameters = args.Arguments[1];
                 decimal[] list_ = (decimal[])args.ReturnValue;
-                Array.Sort(list_);
-                string[] array = new string[list_.Length];
-                for (int i = 0; i < list_.Length; i++)
+                if (parameters == "asc")
                 {
-                    array[i] = list_[i].ToString();
+                    Array.Sort(list_);
                 }
-                foreach (var item in list_)
+                else if (parameters == "desc")
                 {
-                    Console.Write(item + " ");
+                    Array.Sort(list_);
+                    Array.Reverse(list_);
                 }
-                Console.WriteLine("\n" + "Sorted");
-                return array;
+                else
+                {
+                    Console.WriteLine("buyukten kucuge sıralamak istiyorsanız ; desc kucukten buyuge siralamak istiyorsaniz asc degeri giriniz");
+                    Array.Sort(list_);
+                }
+
+                return list_;
             }
             else if (args.ReturnValue.GetType() == typeof(long[]))
             {
+                var parameters = args.Arguments[1];
                 long[] list_ = (long[])args.ReturnValue;
-                Array.Sort(list_);
-                string[] array = new string[list_.Length];
-                for (int i = 0; i < list_.Length; i++)
+                if (parameters == "asc")
                 {
-                    array[i] = list_[i].ToString();
+                    Array.Sort(list_);
                 }
-                foreach (var item in list_)
+                else if (parameters == "desc")
                 {
-                    Console.Write(item + " ");
+                    Array.Sort(list_);
+                    Array.Reverse(list_);
                 }
-                Console.WriteLine("\n" + "Sorted");
-                return array;
+                else
+                {
+                    Console.WriteLine("buyukten kucuge sıralamak istiyorsanız ; desc kucukten buyuge siralamak istiyorsaniz asc degeri giriniz");
+                    Array.Sort(list_);
+                }
+
+                return list_;
             }
             else
                 return new string[0];
-
-
         }
-
     }
 }

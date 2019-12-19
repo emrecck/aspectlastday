@@ -12,13 +12,13 @@ namespace ConsoleApp3
         {
             //List<int> array = new List<int>() { 15, 9, 8, 54, 45, 2, 67, 15, 68 };
             //MyClass MyObject = new MyClass();
-            //MyObject.MyMethodI(array);
+            //MyObject.MyMethodI(array,"asc");
 
 
             int[] dizim = new int[] { 3, 2, 5, 8 };
             var customer = new Customer(dizim);
             int count = 0;
-            foreach (int element in customer.Address)
+            foreach (int element in customer.Name)
             {
 
                 count++;
@@ -68,15 +68,12 @@ namespace ConsoleApp3
     public class Customer
     {
         [PropetryBakıcı]
-        private readonly int[] _address;
+        public ICollection Name { get; set; }
 
-        public Customer(int[] address)
+        public Customer(ICollection address)
         {
-            _address = address;
-            
+            Name = address;
+
         }
-        [PropetryBakıcı]
-        public int[] Name { get; set; }
-        public int[] Address { get { return _address; } }
     }
 }
