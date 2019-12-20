@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Symbols LinesOfCode="339" PostSharpLinesOfCode="0" EnhancedTypesCount="3" SchemaVersion="1" PostSharpVersion="6.4.5.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
+<Symbols LinesOfCode="340" PostSharpLinesOfCode="0" EnhancedTypesCount="3" SchemaVersion="1" PostSharpVersion="6.4.5.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
   <Class Class="#1=T:[PostSharp]PostSharp.Serialization.PSerializableAttribute">
-    <Instance Declaration="#2=T:[AspectProject]ConsoleApp3.PropetryBakıcı" Id="7fc3a48993e3d667">
+    <Instance Declaration="#2=T:[AspectProject]ConsoleApp3.PropetryBakıcı" Id="7fc3a489adf8f190">
       <Target />
     </Instance>
   </Class>
   <Class Class="#3=T:[AspectProject]ConsoleApp3.MyAsepctClass">
-    <Instance Declaration="#4=M:[AspectProject]ConsoleApp3.MyClass::MyMethod(System.Collections.ICollection)" Id="7fc3a48912e690ce">
+    <Instance Declaration="#4=M:[AspectProject]ConsoleApp3.MyClass::MyMethod(System.Collections.ICollection)" Id="7fc3a489638a7807">
       <Target LinesAvoided="2">
         <JoinPoint Description="#5=Wrapped by advice(s) OnSuccess" Ordinal="0" />
       </Target>
     </Instance>
   </Class>
   <Class Class="#2">
-    <Instance Declaration="#6=P:[AspectProject]ConsoleApp3.Customer::collection()" Id="7fc3a489232e8fd3">
+    <Instance Declaration="#6=P:[AspectProject]ConsoleApp3.Customer::pcollection()" Id="7fc3a489a7018497">
       <Target LinesAvoided="2">
-        <JoinPoint Advised="#7=M:[AspectProject]ConsoleApp3.Customer::get_collection()" Description="#8=Intercepted by advice OnGetValue" Semantic="Getter" />
+        <JoinPoint Advised="#7=M:[AspectProject]ConsoleApp3.Customer::get_pcollection()" Description="#8=Intercepted by advice OnGetValue" Semantic="Getter" />
       </Target>
     </Instance>
   </Class>
