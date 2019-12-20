@@ -20,7 +20,7 @@ namespace ConsoleApp3
             int[] dizim = new int[] { 3, 2, 5, 8 };
             var customer = new Customer(dizim);
             int count = 0;
-            foreach (int element in customer.Name)
+            foreach (int element in customer.collection)
             {
                 count++;
                 Console.WriteLine($"Element #{count}: {element}");
@@ -82,11 +82,11 @@ namespace ConsoleApp3
     public class Customer
     {
         [PropetryBakıcı]
-        public ICollection Name { get; set; }
+        public ICollection collection { get; set; }
 
-        public Customer(ICollection address)
+        public Customer(ICollection collection)
         {
-            Name = address;
+            this.collection = collection;
         }
     }
 }
