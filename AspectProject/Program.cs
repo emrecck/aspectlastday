@@ -3,6 +3,7 @@ using PostSharp.Aspects;
 using PostSharp.Serialization;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace ConsoleApp3
 {
@@ -12,8 +13,9 @@ namespace ConsoleApp3
         {
             //List<int> array = new List<int>() { 15, 9, 8, 54, 45, 2, 67, 15, 68 };
             //MyClass MyObject = new MyClass();
-            //MyObject.MyMethodI(array,"asc");
+            //MyObject.MyMethod(array);
 
+            //if null ise deafult asc olsun
 
             int[] dizim = new int[] { 3, 2, 5, 8 };
             var customer = new Customer(dizim);
@@ -23,7 +25,7 @@ namespace ConsoleApp3
                 count++;
                 Console.WriteLine($"Element #{count}: {element}");
             }
-            //Console.WriteLine("Name: {0}", customer.Name);
+
             Console.ReadLine();
         }
     }
@@ -31,12 +33,24 @@ namespace ConsoleApp3
     [Serializable]
     public class MyAsepctClass : OnMethodBoundaryAspect
     {
+        private string bayrak;
+        public string pbayrak
+        {
+            get
+            {
+                return bayrak;
+            }
+            set
+            {
+                    bayrak = value;
+            }
+        }
         public override void OnSuccess(MethodExecutionArgs args)
         {
             if (args.ReturnValue is ICollection)
             {
                 sirala mysirala = new sirala();
-                mysirala.Siralaturegore(args);
+                mysirala.Siralaturegore(args,bayrak);
             }
             else Console.WriteLine("Collection degil");
         }
@@ -59,8 +73,8 @@ namespace ConsoleApp3
     }
     public class MyClass
     {
-        [MyAsepctClass]
-        public ICollection MyMethod(ICollection array, string ascordesc)
+        [MyAsepctClass(pbayrak ="asc")]
+        public ICollection MyMethod(ICollection array)
         {
             return array;
         }

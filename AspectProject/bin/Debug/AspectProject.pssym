@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Symbols LinesOfCode="514" PostSharpLinesOfCode="0" EnhancedTypesCount="3" SchemaVersion="1" PostSharpVersion="6.4.3.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
+<Symbols LinesOfCode="339" PostSharpLinesOfCode="0" EnhancedTypesCount="3" SchemaVersion="1" PostSharpVersion="6.4.5.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
   <Class Class="#1=T:[PostSharp]PostSharp.Serialization.PSerializableAttribute">
-    <Instance Declaration="#2=T:[AspectProject]ConsoleApp3.PropetryBakıcı" Id="7fc3a4894e3f7936">
+    <Instance Declaration="#2=T:[AspectProject]ConsoleApp3.PropetryBakıcı" Id="7fc3a4891ccfc99e">
       <Target />
     </Instance>
   </Class>
   <Class Class="#3=T:[AspectProject]ConsoleApp3.MyAsepctClass">
-    <Instance Declaration="#4=M:[AspectProject]ConsoleApp3.MyClass::MyMethod(System.Collections.ICollection, System.String)" Id="7fc3a489b67d25f4">
+    <Instance Declaration="#4=M:[AspectProject]ConsoleApp3.MyClass::MyMethod(System.Collections.ICollection)" Id="7fc3a4890cf0dc00">
       <Target LinesAvoided="2">
         <JoinPoint Description="#5=Wrapped by advice(s) OnSuccess" Ordinal="0" />
       </Target>
     </Instance>
   </Class>
   <Class Class="#2">
-    <Instance Declaration="#6=P:[AspectProject]ConsoleApp3.Customer::Name()" Id="7fc3a4897d82dffd">
+    <Instance Declaration="#6=P:[AspectProject]ConsoleApp3.Customer::Name()" Id="7fc3a489f83efa91">
       <Target LinesAvoided="2">
         <JoinPoint Advised="#7=M:[AspectProject]ConsoleApp3.Customer::get_Name()" Description="#8=Intercepted by advice OnGetValue" Semantic="Getter" />
       </Target>
