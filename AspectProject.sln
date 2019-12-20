@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspectProject", "AspectProj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{EBC31640-9347-4301-850F-DBAD9AF7ED4C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspectwithDynamicProxy", "..\..\..\..\Source\Repos\AspectwithDynamicProxy\AspectwithDynamicProxy\AspectwithDynamicProxy.csproj", "{EE6B1067-0C29-4E41-BB5D-992BABE8900C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject2", "..\..\..\..\Source\Repos\AspectwithDynamicProxy\UnitTestProject2\UnitTestProject2.csproj", "{AD116EB7-9698-4A65-AA12-859CBA3FBC74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{EBC31640-9347-4301-850F-DBAD9AF7ED4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBC31640-9347-4301-850F-DBAD9AF7ED4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBC31640-9347-4301-850F-DBAD9AF7ED4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE6B1067-0C29-4E41-BB5D-992BABE8900C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE6B1067-0C29-4E41-BB5D-992BABE8900C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE6B1067-0C29-4E41-BB5D-992BABE8900C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE6B1067-0C29-4E41-BB5D-992BABE8900C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD116EB7-9698-4A65-AA12-859CBA3FBC74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD116EB7-9698-4A65-AA12-859CBA3FBC74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD116EB7-9698-4A65-AA12-859CBA3FBC74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD116EB7-9698-4A65-AA12-859CBA3FBC74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

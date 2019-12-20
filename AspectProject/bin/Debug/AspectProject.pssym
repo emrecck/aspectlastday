@@ -1,24 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Symbols LinesOfCode="340" PostSharpLinesOfCode="0" EnhancedTypesCount="3" SchemaVersion="1" PostSharpVersion="6.4.5.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
+<Symbols LinesOfCode="332" PostSharpLinesOfCode="0" EnhancedTypesCount="3" SchemaVersion="1" PostSharpVersion="6.4.5.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
   <Class Class="#1=T:[PostSharp]PostSharp.Serialization.PSerializableAttribute">
-    <Instance Declaration="#2=T:[AspectProject]ConsoleApp3.PropetryBakıcı" Id="7fc3a489adf8f190">
+    <Instance Declaration="#2=T:[AspectProject]ConsoleApp3.PropetryBakıcı" Id="7fc3a489bd538b00">
       <Target />
     </Instance>
   </Class>
   <Class Class="#3=T:[AspectProject]ConsoleApp3.MyAsepctClass">
-    <Instance Declaration="#4=M:[AspectProject]ConsoleApp3.MyClass::MyMethod(System.Collections.ICollection)" Id="7fc3a489638a7807">
+    <Instance Declaration="#4=M:[AspectProject]ConsoleApp3.MyClass::MyMethod(System.Collections.ICollection)" Id="7fc3a48971861808">
       <Target LinesAvoided="2">
         <JoinPoint Description="#5=Wrapped by advice(s) OnSuccess" Ordinal="0" />
       </Target>
     </Instance>
-  </Class>
-  <Class Class="#2">
-    <Instance Declaration="#6=P:[AspectProject]ConsoleApp3.Customer::pcollection()" Id="7fc3a489a7018497">
+    <Instance Declaration="#6=M:[AspectProject]ConsoleApp3.MyClass::deneme()" Id="7fc3a489f9c3c16f">
       <Target LinesAvoided="2">
-        <JoinPoint Advised="#7=M:[AspectProject]ConsoleApp3.Customer::get_pcollection()" Description="#8=Intercepted by advice OnGetValue" Semantic="Getter" />
+        <JoinPoint Description="#5" />
       </Target>
     </Instance>
   </Class>
-  <Annotation Target="#9=M:[AspectProject]ConsoleApp3.MyAsepctClass::OnSuccess(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#10=2" Description="#11=PostSharp estimates that 2 lines of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
-  <Annotation Target="#12=M:[AspectProject]ConsoleApp3.PropetryBakıcı::OnGetValue(PostSharp.Aspects.LocationInterceptionArgs)" Arguments="#10" Description="#11" />
+  <Class Class="#2">
+    <Instance Declaration="#7=P:[AspectProject]ConsoleApp3.Customer::pcollection()" Id="7fc3a489b98bbdb2">
+      <Target LinesAvoided="2">
+        <JoinPoint Advised="#8=M:[AspectProject]ConsoleApp3.Customer::get_pcollection()" Description="#9=Intercepted by advice OnGetValue" Semantic="Getter" Ordinal="2" />
+      </Target>
+    </Instance>
+  </Class>
+  <Annotation Target="#10=M:[AspectProject]ConsoleApp3.MyAsepctClass::OnSuccess(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#11=2" Description="#12=PostSharp estimates that 2 lines of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
+  <Annotation Target="#13=M:[AspectProject]ConsoleApp3.PropetryBakıcı::OnGetValue(PostSharp.Aspects.LocationInterceptionArgs)" Arguments="#11" Description="#12" />
 </Symbols>

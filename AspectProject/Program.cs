@@ -11,22 +11,23 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            //List<int> array = new List<int>() { 15, 9, 8, 54, 45, 2, 67, 15, 68 };
-            //MyClass MyObject = new MyClass();
-            //MyObject.MyMethod(array);
+            List<int> array = new List<int>() { 15, 9, 8, 54, 45, 2, 67, 15, 68 };
+            MyClass MyObject = new MyClass();
+            MyObject.MyMethod(array);
 
             //if null ise deafult asc olsun
 
-            int[] dizim = new int[] { 3, 2, 5, 8 };
-            var customer = new Customer(dizim);
-            int count = 0;
-            foreach (int element in customer.pcollection)
-            {
-                count++;
-                Console.WriteLine($"Element #{count}: {element}");
-            }
+            //int[] dizim = new int[] { 3, 2, 5, 8 };
+            //var customer = new Customer(dizim);
+            //int count = 0;
+            //foreach (int element in customer.pcollection)
+            //{
+            //    count++;
+            //    Console.WriteLine($"Element #{count}: {element}");
+            //}
 
-            Console.ReadLine();
+            //Console.ReadLine();
+
         }
     }
 
@@ -42,7 +43,7 @@ namespace ConsoleApp3
             }
             set
             {
-                    bayrak = value;
+                bayrak = value;
             }
         }
         public override void OnSuccess(MethodExecutionArgs args)
@@ -50,9 +51,8 @@ namespace ConsoleApp3
             if (args.ReturnValue is ICollection)
             {
                 sirala mysirala = new sirala();
-                mysirala.Siralaturegore(args,bayrak);
+                mysirala.Siralaturegore(args,pbayrak);
             }
-            else Console.WriteLine("Collection degil");
         }
     }
 
@@ -77,6 +77,11 @@ namespace ConsoleApp3
         public ICollection MyMethod(ICollection array)
         {
             return array;
+        }
+        [MyAsepctClass]
+        public void deneme()
+        {
+            Console.WriteLine("bakalım");
         }
     }
     public class Customer

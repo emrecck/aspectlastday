@@ -7,7 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace UnitTestProject1
 {
     [TestClass]
-    public class UnitTest1
+    public class PostSharpTestClass
     {
         [TestMethod]
         public void TestMethodListInt()
@@ -16,7 +16,7 @@ namespace UnitTestProject1
             deneme.Sort();
             List<int> array = new List<int>() { 15, 9, 8, 54, 45, 2, 67, 15, 68 };
             MyClass MyObject = new MyClass();
-            MyObject.MyMethod(array );
+            MyObject.MyMethod(array);
             CollectionAssert.AreEqual(deneme, array);
         }
         [TestMethod]
@@ -189,6 +189,12 @@ namespace UnitTestProject1
             Customer customer = new Customer(dizi);
             //ICollection var = customer.pcollection;
             CollectionAssert.AreEqual(deneme, customer.pcollection);
+        }
+        [TestMethod]
+        public void EmptyTest()
+        {
+            MyClass myClass = new MyClass();
+            myClass.deneme();
         }
     }
 }

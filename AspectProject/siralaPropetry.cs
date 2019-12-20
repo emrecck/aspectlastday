@@ -19,7 +19,6 @@ namespace ConsoleApp3
             {
                 List<string> list_ = (List<string>)args.Value;
                 list_.Sort();
-                string[] array = new string[list_.Count];
                 return list_;
             }
             else if (args.Value.GetType() == typeof(List<double>))
